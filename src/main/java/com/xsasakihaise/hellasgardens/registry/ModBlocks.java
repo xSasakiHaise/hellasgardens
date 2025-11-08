@@ -6,6 +6,7 @@ import com.xsasakihaise.hellasgardens.block.HellasCropBlock;
 import com.xsasakihaise.hellasgardens.block.HellasFlowerBlock;
 import com.xsasakihaise.hellasgardens.block.HellasHerbBlock;
 import com.xsasakihaise.hellasgardens.block.HellasSaplingBlock;
+import com.xsasakihaise.hellasgardens.block.special.HellasMelonBlock;
 import com.xsasakihaise.hellasgardens.block.special.HellasReedBlock;
 import com.xsasakihaise.hellasgardens.block.special.HellasVineBlock;
 import net.minecraft.block.Block;
@@ -36,7 +37,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOULTHORN_BUSH = registerBush("soulthorn_bush");
 
     // Crops
-    public static final RegistryObject<Block> ASHMELON_CROP = registerCrop("ashmelon");
     public static final RegistryObject<Block> DREAMGOURD_CROP = registerCrop("dreamgourd");
     public static final RegistryObject<Block> ELYSIAN_WHEAT_CROP = registerCrop("elysian_wheat");
     public static final RegistryObject<Block> OBSIDIAN_CORN_CROP = registerCrop("obsidian_corn");
@@ -108,10 +108,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> HESPERID_APPLE_TREELET_PLANKS = registerPlanks("hesperid_apple_treelet");
     public static final RegistryObject<Block> HESPERID_APPLE_TREELET_LEAVES = registerLeaves("hesperid_apple_treelet");
     public static final RegistryObject<Block> HESPERID_APPLE_TREELET_SAPLING = registerSapling("hesperid_apple_treelet", HESPERID_APPLE_TREELET_LOG, HESPERID_APPLE_TREELET_LEAVES);
+    public static final RegistryObject<Block> EBON_FIG_SAPLING = registerSapling("ebon_fig");
+    public static final RegistryObject<Block> LUMINARIS_TREE_SAPLING = registerSapling("luminaris_tree");
+    public static final RegistryObject<Block> PHANTOM_OLIVE_SAPLING = registerSapling("phantom_olive");
+    public static final RegistryObject<Block> UNDERBLOOM_MAGNOLIA_SAPLING = registerSapling("underbloom_magnolia");
+    public static final RegistryObject<Block> VEILWILLOW_SAPLING = registerSapling("veilwillow");
+    public static final RegistryObject<Block> WHITE_CYPRESS_SAPLING = registerSapling("white_cypress");
+    public static final RegistryObject<Block> HESPERID_APPLE_TREELET_SAPLING = registerSapling("hesperid_apple_treelet");
 
     // Specials
     public static final RegistryObject<Block> WRAITHVINE = registerVine("wraithvine");
     public static final RegistryObject<Block> CHARONS_REED = registerReed("charons_reed");
+    public static final RegistryObject<Block> ASHMELON_MELON = registerMelon("ashmelon");
 
     private static RegistryObject<Block> registerCrop(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_crop", () -> new HellasCropBlock(ModItems.seedSupplier(name)));
@@ -191,6 +199,12 @@ public class ModBlocks {
         RegistryObject<Block> block = BLOCKS.register(name + "_reeds", HellasReedBlock::new);
         ModItems.registerPlantItems(name, block, false);
         CUTOUT_BLOCKS.add(block);
+        return block;
+    }
+
+    private static RegistryObject<Block> registerMelon(String name) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_melon", HellasMelonBlock::new);
+        ModItems.registerPlantItems(name, block, false);
         return block;
     }
 

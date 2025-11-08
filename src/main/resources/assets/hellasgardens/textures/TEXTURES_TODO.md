@@ -44,11 +44,8 @@ Each entry is grouped by its texture category and subfolder. Create a PNG with t
 - `seed.png`
 - `sprout.png`
 
-### crops/ashmelon
-- `budding.png`
-- `harvest.png`
-- `seed_sprout.png`
-- `vegetative.png`
+### special/melons/ashmelon
+- `ashmelon.png`
 
 ### crops/dreamgourd
 - `budding.png`
@@ -173,6 +170,7 @@ Each entry is grouped by its texture category and subfolder. Create a PNG with t
 
 ### trees/phantom_olive
 - `sapling.png`
+
 
 ### trees/underbloom_magnolia
 - `sapling.png`
