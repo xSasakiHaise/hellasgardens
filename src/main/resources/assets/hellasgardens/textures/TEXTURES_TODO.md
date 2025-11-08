@@ -160,26 +160,67 @@ Each entry is grouped by its texture category and subfolder. Create a PNG with t
 - `full_bloom_or_fruit.png`
 
 ### trees/ebon_fig
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/hesperid_apple_treelet
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/luminaris_tree
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/phantom_olive
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
-
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/underbloom_magnolia
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/veilwillow
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ### trees/white_cypress
+- `leaves.png`
+- `log.png`
+- `log_top.png`
+- `planks.png`
 - `sapling.png`
+- `stripped_log.png`
+- `stripped_log_top.png`
 
 ## Item Textures
 ### General
