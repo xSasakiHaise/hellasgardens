@@ -1,0 +1,6 @@
+{
+  "parent": "block/vine",
+  "textures": {
+    "vine": "hellasgardens:block/special/vines/wraithvine/full_bloom_or_fruit"
+  }
+}

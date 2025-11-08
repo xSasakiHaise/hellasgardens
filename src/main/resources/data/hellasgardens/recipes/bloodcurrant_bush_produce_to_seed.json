@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:bloodcurrant_bush_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:bloodcurrant_bush_seed"
+  }
+}

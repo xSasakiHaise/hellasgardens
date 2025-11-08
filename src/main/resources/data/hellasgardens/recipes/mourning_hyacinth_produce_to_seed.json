@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:mourning_hyacinth_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:mourning_hyacinth_seed"
+  }
+}

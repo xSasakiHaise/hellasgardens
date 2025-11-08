@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:soulbean_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:soulbean_seed"
+  }
+}

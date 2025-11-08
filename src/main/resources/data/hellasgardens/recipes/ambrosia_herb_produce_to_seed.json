@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ambrosia_herb_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ambrosia_herb_seed"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "hellasgardens:block/trees/hesperid_apple_treelet/sapling"
+  }
+}

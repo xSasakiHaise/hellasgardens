@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hellasgardens:block/herbs/grave_thyme_age0"
+    },
+    "age=1": {
+      "model": "hellasgardens:block/herbs/grave_thyme_age1"
+    },
+    "age=2": {
+      "model": "hellasgardens:block/herbs/grave_thyme_age2"
+    }
+  }
+}

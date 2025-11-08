@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hellasgardens:ironleaf_bramble_seed",
+          "functions": [
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hellasgardens:ironleaf_bramble_produce",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hellasgardens:ironleaf_bramble_bush",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "parameters": {
+                "bonusMultiplier": 1
+              }
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

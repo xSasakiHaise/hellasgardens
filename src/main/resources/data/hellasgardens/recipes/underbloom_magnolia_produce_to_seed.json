@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:underbloom_magnolia_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:underbloom_magnolia_seed"
+  }
+}

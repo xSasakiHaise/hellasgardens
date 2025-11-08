@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:persephones_blossom_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:persephones_blossom_seed"
+  }
+}

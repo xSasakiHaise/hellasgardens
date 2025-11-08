@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ironleaf_bramble_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ironleaf_bramble_seed"
+  }
+}

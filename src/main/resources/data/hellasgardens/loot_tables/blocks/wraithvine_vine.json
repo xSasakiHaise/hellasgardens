@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hellasgardens:wraithvine_vine",
+          "functions": [
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hellasgardens:wraithvine_seed",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "parameters": {
+                "bonusMultiplier": 1
+              }
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

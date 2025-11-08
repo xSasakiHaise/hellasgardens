@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ashmelon_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ashmelon_seed"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:charons_reed_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:charons_reed_seed"
+  }
+}

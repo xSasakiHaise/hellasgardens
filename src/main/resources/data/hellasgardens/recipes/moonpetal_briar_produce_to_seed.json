@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:moonpetal_briar_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:moonpetal_briar_seed"
+  }
+}

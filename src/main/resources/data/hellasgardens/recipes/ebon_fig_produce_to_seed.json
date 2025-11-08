@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ebon_fig_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ebon_fig_seed"
+  }
+}

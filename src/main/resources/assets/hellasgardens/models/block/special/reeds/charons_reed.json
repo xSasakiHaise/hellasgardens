@@ -1,0 +1,6 @@
+{
+  "parent": "block/sugar_cane",
+  "textures": {
+    "all": "hellasgardens:block/special/reeds/charons_reed/full_bloom_or_fruit"
+  }
+}

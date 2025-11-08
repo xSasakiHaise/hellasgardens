@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:dreamgourd_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:dreamgourd_seed"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:grave_thyme_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:grave_thyme_seed"
+  }
+}

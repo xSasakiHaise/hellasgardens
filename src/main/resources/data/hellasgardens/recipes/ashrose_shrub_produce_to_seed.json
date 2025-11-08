@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ashrose_shrub_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ashrose_shrub_seed"
+  }
+}

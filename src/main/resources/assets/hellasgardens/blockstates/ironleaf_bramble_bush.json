@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hellasgardens:block/bushes/ironleaf_bramble_age0"
+    },
+    "age=1": {
+      "model": "hellasgardens:block/bushes/ironleaf_bramble_age1"
+    },
+    "age=2": {
+      "model": "hellasgardens:block/bushes/ironleaf_bramble_age2"
+    },
+    "age=3": {
+      "model": "hellasgardens:block/bushes/ironleaf_bramble_age3"
+    }
+  }
+}
