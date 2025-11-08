@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "hellasgardens:block/trees/luminaris_tree/log",
+    "end": "hellasgardens:block/trees/luminaris_tree/log_top"
+  }
+}

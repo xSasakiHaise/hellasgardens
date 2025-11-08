@@ -24,6 +24,7 @@ public class ModItems {
     private static final Map<String, RegistryObject<Item>> PRODUCE_ITEMS = new LinkedHashMap<>();
 
     private static final Item.Properties DEFAULT_PROPS = new Item.Properties().tab(ItemGroup.TAB_MISC);
+    private static final Item.Properties DEFAULT_BLOCK_PROPS = new Item.Properties().tab(ItemGroup.TAB_BUILDING_BLOCKS);
 
     private ModItems() {
     }
@@ -39,6 +40,10 @@ public class ModItems {
         RegistryObject<Item> produce = ITEMS.register(name + "_produce", () -> new Item(DEFAULT_PROPS));
         SEED_ITEMS.put(name, seed);
         PRODUCE_ITEMS.put(name, produce);
+    }
+
+    public static void registerBlockItem(String name, Supplier<? extends Block> block) {
+        ITEMS.register(name, () -> new BlockItem(block.get(), DEFAULT_BLOCK_PROPS));
     }
 
     public static Supplier<Item> seedSupplier(String name) {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "hellasgardens:block/trees/hesperid_apple_treelet/stripped_log",
+    "end": "hellasgardens:block/trees/hesperid_apple_treelet/stripped_log_top"
+  }
+}

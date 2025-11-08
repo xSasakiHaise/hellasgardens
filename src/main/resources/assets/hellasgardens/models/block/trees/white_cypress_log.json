@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "hellasgardens:block/trees/white_cypress/log",
+    "end": "hellasgardens:block/trees/white_cypress/log_top"
+  }
+}

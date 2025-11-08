@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hellasgardens:block/trees/hesperid_apple_treelet/planks"
+  }
+}

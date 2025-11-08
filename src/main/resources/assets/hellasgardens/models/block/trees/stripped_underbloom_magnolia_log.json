@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "hellasgardens:block/trees/underbloom_magnolia/stripped_log",
+    "end": "hellasgardens:block/trees/underbloom_magnolia/stripped_log_top"
+  }
+}
