@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "hellasgardens:block/trees/ebon_fig/log",
+    "end": "hellasgardens:block/trees/ebon_fig/log_top"
+  }
+}

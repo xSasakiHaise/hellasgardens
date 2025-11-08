@@ -174,9 +174,6 @@ Each entry is grouped by its texture category and subfolder. Create a PNG with t
 ### trees/phantom_olive
 - `sapling.png`
 
-### trees/pomegranate_tree
-- `sapling.png`
-
 ### trees/underbloom_magnolia
 - `sapling.png`
 
@@ -248,8 +245,6 @@ Each entry is grouped by its texture category and subfolder. Create a PNG with t
 - `pomegranate_blossom_seed.png`
 - `pomegranate_bush_produce.png`
 - `pomegranate_bush_seed.png`
-- `pomegranate_tree_produce.png`
-- `pomegranate_tree_seed.png`
 - `shadeberry_bush_produce.png`
 - `shadeberry_bush_seed.png`
 - `soulbean_produce.png`

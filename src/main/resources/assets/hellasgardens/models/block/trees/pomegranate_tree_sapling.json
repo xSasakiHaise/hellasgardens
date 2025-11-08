@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "hellasgardens:block/trees/pomegranate_tree/sapling"
-  }
-}

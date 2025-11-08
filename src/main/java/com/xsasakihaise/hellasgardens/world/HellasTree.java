@@ -12,8 +12,17 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.event.ForgeEventFactory;
 
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class HellasTree extends Tree {
+    private final Supplier<BlockState> logState;
+    private final Supplier<BlockState> leavesState;
+
+    public HellasTree(Supplier<BlockState> logState, Supplier<BlockState> leavesState) {
+        this.logState = logState;
+        this.leavesState = leavesState;
+    }
+
     @Override
     protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random random, boolean bees) {
         return null;
@@ -32,8 +41,17 @@ public class HellasTree extends Tree {
             }
         }
         world.setBlock(pos, Blocks.AIR.defaultBlockState(), 4);
-        BlockState log = Blocks.OAK_LOG.defaultBlockState();
-        BlockState leaves = Blocks.OAK_LEAVES.defaultBlockState().setValue(LeavesBlock.PERSISTENT, true);
+        BlockState log = logState.get();
+        if (log == null) {
+            log = Blocks.OAK_LOG.defaultBlockState();
+        }
+        BlockState leaves = leavesState.get();
+        if (leaves == null) {
+            leaves = Blocks.OAK_LEAVES.defaultBlockState();
+        }
+        if (leaves.hasProperty(LeavesBlock.PERSISTENT)) {
+            leaves = leaves.setValue(LeavesBlock.PERSISTENT, true);
+        }
         for (int y = 0; y < height; y++) {
             BlockPos logPos = pos.above(y);
             world.setBlock(logPos, log, 19);

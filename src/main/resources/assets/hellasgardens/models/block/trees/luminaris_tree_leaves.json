@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "hellasgardens:block/trees/luminaris_tree/leaves"
+  }
+}
