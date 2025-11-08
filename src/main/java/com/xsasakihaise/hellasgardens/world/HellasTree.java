@@ -27,7 +27,7 @@ public class HellasTree extends Tree {
         int height = 3 + random.nextInt(3);
         for (int y = 0; y < height; y++) {
             BlockPos logPos = pos.above(y);
-            if (!world.getBlockState(logPos).canBeReplaced()) {
+            if (!world.isEmptyBlock(logPos)) {
                 return false;
             }
         }
@@ -46,7 +46,7 @@ public class HellasTree extends Tree {
                         continue;
                     }
                     BlockPos leafPos = top.offset(dx, dy, dz);
-                    if (world.getBlockState(leafPos).canBeReplaced()) {
+                    if (world.isEmptyBlock(leafPos)) {
                         world.setBlock(leafPos, leaves, 19);
                     }
                 }
