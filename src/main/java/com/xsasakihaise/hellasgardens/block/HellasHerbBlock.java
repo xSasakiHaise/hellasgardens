@@ -40,12 +40,12 @@ public class HellasHerbBlock extends BushBlock implements net.minecraft.block.IG
     }
 
     @Override
-    public boolean canGrow(IBlockReader world, BlockPos pos, BlockState state, boolean isClient) {
+    public boolean isValidBonemealTarget(IBlockReader world, BlockPos pos, BlockState state, boolean isClient) {
         return state.getValue(AGE) < 2;
     }
 
     @Override
-    public boolean canUseBonemeal(World world, Random random, BlockPos pos, BlockState state) {
+    public boolean isBonemealSuccess(World world, Random random, BlockPos pos, BlockState state) {
         return true;
     }
 

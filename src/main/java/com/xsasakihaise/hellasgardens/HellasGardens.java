@@ -2,6 +2,7 @@ package com.xsasakihaise.hellasgardens;
 
 import com.xsasakihaise.hellasgardens.registry.ModBlocks;
 import com.xsasakihaise.hellasgardens.registry.ModItems;
+import com.xsasakihaise.hellasgardens.registry.ModLootModifiers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +20,7 @@ public class HellasGardens {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
 
         DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> Client::init);
     }
