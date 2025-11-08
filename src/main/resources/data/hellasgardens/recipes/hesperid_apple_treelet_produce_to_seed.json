@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:hesperid_apple_treelet_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:hesperid_apple_treelet_seed"
+  }
+}

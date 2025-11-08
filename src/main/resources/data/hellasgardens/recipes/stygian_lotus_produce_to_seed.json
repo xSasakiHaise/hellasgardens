@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:stygian_lotus_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:stygian_lotus_seed"
+  }
+}

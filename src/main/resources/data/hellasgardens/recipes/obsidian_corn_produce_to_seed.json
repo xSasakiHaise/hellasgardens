@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:obsidian_corn_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:obsidian_corn_seed"
+  }
+}

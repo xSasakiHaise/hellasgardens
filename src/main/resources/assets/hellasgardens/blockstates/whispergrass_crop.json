@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hellasgardens:block/crops/whispergrass_age0"
+    },
+    "age=1": {
+      "model": "hellasgardens:block/crops/whispergrass_age1"
+    },
+    "age=2": {
+      "model": "hellasgardens:block/crops/whispergrass_age2"
+    },
+    "age=3": {
+      "model": "hellasgardens:block/crops/whispergrass_age3"
+    },
+    "age=4": {
+      "model": "hellasgardens:block/crops/whispergrass_age4"
+    },
+    "age=5": {
+      "model": "hellasgardens:block/crops/whispergrass_age5"
+    },
+    "age=6": {
+      "model": "hellasgardens:block/crops/whispergrass_age6"
+    },
+    "age=7": {
+      "model": "hellasgardens:block/crops/whispergrass_age7"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:lethean_mint_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:lethean_mint_seed"
+  }
+}

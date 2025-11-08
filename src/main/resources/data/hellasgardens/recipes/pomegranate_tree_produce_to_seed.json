@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:pomegranate_tree_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:pomegranate_tree_seed"
+  }
+}

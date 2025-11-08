@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:narcisse_bloom_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:narcisse_bloom_seed"
+  }
+}

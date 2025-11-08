@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:soulthorn_bush_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:soulthorn_bush_seed"
+  }
+}

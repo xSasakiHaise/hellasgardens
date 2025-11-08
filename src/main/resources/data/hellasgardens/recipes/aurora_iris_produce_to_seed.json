@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:aurora_iris_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:aurora_iris_seed"
+  }
+}

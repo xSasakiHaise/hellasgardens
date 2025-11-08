@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hellasgardens:block/crops/dreamgourd_age0"
+    },
+    "age=1": {
+      "model": "hellasgardens:block/crops/dreamgourd_age1"
+    },
+    "age=2": {
+      "model": "hellasgardens:block/crops/dreamgourd_age2"
+    },
+    "age=3": {
+      "model": "hellasgardens:block/crops/dreamgourd_age3"
+    },
+    "age=4": {
+      "model": "hellasgardens:block/crops/dreamgourd_age4"
+    },
+    "age=5": {
+      "model": "hellasgardens:block/crops/dreamgourd_age5"
+    },
+    "age=6": {
+      "model": "hellasgardens:block/crops/dreamgourd_age6"
+    },
+    "age=7": {
+      "model": "hellasgardens:block/crops/dreamgourd_age7"
+    }
+  }
+}

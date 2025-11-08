@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:white_cypress_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:white_cypress_seed"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "hellasgardens:block/trees/ebon_fig/sapling"
+  }
+}

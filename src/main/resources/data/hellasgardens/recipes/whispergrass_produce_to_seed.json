@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:whispergrass_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:whispergrass_seed"
+  }
+}

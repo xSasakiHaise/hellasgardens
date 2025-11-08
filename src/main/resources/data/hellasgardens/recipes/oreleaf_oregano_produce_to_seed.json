@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:oreleaf_oregano_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:oreleaf_oregano_seed"
+  }
+}

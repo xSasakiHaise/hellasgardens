@@ -1,0 +1,48 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "hellasgardens:block/special/vines/wraithvine"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "hellasgardens:block/special/vines/wraithvine",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "hellasgardens:block/special/vines/wraithvine",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "hellasgardens:block/special/vines/wraithvine",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "hellasgardens:block/special/vines/wraithvine",
+        "x": 270
+      }
+    }
+  ]
+}

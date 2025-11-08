@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hellasgardens:block/herbs/nectar_leaf_age0"
+    },
+    "age=1": {
+      "model": "hellasgardens:block/herbs/nectar_leaf_age1"
+    },
+    "age=2": {
+      "model": "hellasgardens:block/herbs/nectar_leaf_age2"
+    }
+  }
+}

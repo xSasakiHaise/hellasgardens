@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "hellasgardens:block/bushes/ironleaf_bramble/seed"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:erebon_lily_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:erebon_lily_seed"
+  }
+}

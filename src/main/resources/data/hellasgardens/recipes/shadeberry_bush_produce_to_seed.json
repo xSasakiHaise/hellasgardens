@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:shadeberry_bush_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:shadeberry_bush_seed"
+  }
+}

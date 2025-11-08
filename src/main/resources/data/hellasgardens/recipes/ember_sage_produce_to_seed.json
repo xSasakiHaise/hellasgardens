@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:ember_sage_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:ember_sage_seed"
+  }
+}

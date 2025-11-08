@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hellasgardens:elysian_rose_produce"
+    }
+  ],
+  "result": {
+    "item": "hellasgardens:elysian_rose_seed"
+  }
+}
