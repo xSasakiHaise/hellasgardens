@@ -12,6 +12,10 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.Random;
 
+/**
+ * Custom reed column that limits its natural height to two blocks while still
+ * behaving like sugar cane regarding bonemeal and neighbor updates.
+ */
 public class HellasReedBlock extends SugarCaneBlock {
     public HellasReedBlock() {
         super(AbstractBlock.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));

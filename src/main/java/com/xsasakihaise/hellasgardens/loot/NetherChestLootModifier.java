@@ -20,6 +20,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * Global loot modifier that injects Hellas flora items into Nether chest loot
+ * tables. The modifier keeps its own allow-list of tables to avoid affecting
+ * unrelated structures.
+ */
 public class NetherChestLootModifier extends LootModifier {
     private static final Set<ResourceLocation> TARGET_LOOT_TABLES = new LinkedHashSet<>(Arrays.asList(
         new ResourceLocation("minecraft", "chests/nether_bridge"),
@@ -32,6 +37,11 @@ public class NetherChestLootModifier extends LootModifier {
 
     private final float chancePerItem;
 
+    /**
+     * @param chancePerItem independent probability applied to each registered
+     *                      item when deciding if it should be added to the chest
+     *                      loot.
+     */
     public NetherChestLootModifier(ILootCondition[] conditionsIn, float chancePerItem) {
         super(conditionsIn);
         this.chancePerItem = chancePerItem;
@@ -62,6 +72,7 @@ public class NetherChestLootModifier extends LootModifier {
         return generatedLoot;
     }
 
+    /** Adds the provided item to the set, skipping empty placeholders. */
     private void addItem(Set<Item> items, Item item) {
         if (item != null && item != Items.AIR) {
             items.add(item);

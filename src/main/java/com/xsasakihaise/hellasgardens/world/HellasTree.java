@@ -14,6 +14,11 @@ import net.minecraftforge.event.ForgeEventFactory;
 import java.util.Random;
 import java.util.function.Supplier;
 
+/**
+ * Minimal custom tree generator used by every Hellas sapling. The class is a
+ * lighter alternative to full {@link ConfiguredFeature} trees and simply builds
+ * a straight trunk with a small leaf canopy using supplied block states.
+ */
 public class HellasTree extends Tree {
     private final Supplier<BlockState> logState;
     private final Supplier<BlockState> leavesState;
@@ -25,10 +30,17 @@ public class HellasTree extends Tree {
 
     @Override
     protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random random, boolean bees) {
+        // We override growTree directly, so returning null prevents vanilla from attempting
+        // to spawn a configured feature.
         return null;
     }
 
     @Override
+    /**
+     * Generates a short tree if the surrounding area is free. The implementation
+     * mirrors the vanilla sapling growth entry point but swaps in the custom log
+     * and leaves states.
+     */
     public boolean growTree(ServerWorld world, ChunkGenerator generator, BlockPos pos, BlockState state, Random random) {
         if (!ForgeEventFactory.saplingGrowTree(world, random, pos)) {
             return false;

@@ -5,6 +5,9 @@ import net.minecraft.block.MelonBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
+/**
+ * Simple melon variant used to theme the Ashmelon crop family.
+ */
 public class HellasMelonBlock extends MelonBlock {
     public HellasMelonBlock() {
         super(AbstractBlock.Properties.of(Material.VEGETABLE).strength(1.0F).sound(SoundType.WOOD));

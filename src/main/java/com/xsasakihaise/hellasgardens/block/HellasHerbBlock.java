@@ -16,6 +16,9 @@ import net.minecraftforge.common.util.Constants;
 
 import java.util.Random;
 
+/**
+ * Simplified two-stage herb plant used for small decorative foliage.
+ */
 public class HellasHerbBlock extends BushBlock implements net.minecraft.block.IGrowable {
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 2);
 
