@@ -10,6 +10,10 @@ import net.minecraft.world.IBlockReader;
 
 import java.util.function.Supplier;
 
+/**
+ * Standard crop implementation that delegates its seed item to a supplier so
+ * registration order does not matter.
+ */
 public class HellasCropBlock extends CropsBlock {
     private final Supplier<Item> seedSupplier;
 

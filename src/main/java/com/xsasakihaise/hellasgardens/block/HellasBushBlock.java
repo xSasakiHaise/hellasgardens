@@ -24,10 +24,19 @@ import net.minecraftforge.common.util.Constants;
 import java.util.Random;
 import java.util.function.Supplier;
 
+/**
+ * Berry-style bush that matures through four growth stages and drops produce
+ * items when harvested by players. The block extends {@link BushBlock} so it
+ * behaves like vanilla sweet berry bushes but without damage or slowing
+ * effects.
+ */
 public class HellasBushBlock extends BushBlock implements net.minecraft.block.IGrowable {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     private final Supplier<Item> produceSupplier;
 
+    /**
+     * @param produceSupplier lazy lookup for the item dropped on harvest.
+     */
     public HellasBushBlock(Supplier<Item> produceSupplier) {
         super(Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));
         this.produceSupplier = produceSupplier;

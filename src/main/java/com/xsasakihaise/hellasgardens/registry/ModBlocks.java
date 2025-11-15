@@ -23,7 +23,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.function.Supplier;
 
+/**
+ * Central registry for every decorative or functional plant block added by the
+ * mod. The class exposes strongly typed {@link RegistryObject} references for
+ * bushes, crops, trees and special flora. Helper registration methods keep the
+ * block + block item wiring in one place and track which blocks should use the
+ * cutout render layer on the client.
+ */
 public class ModBlocks {
+    /** Deferred register that owns all block entries belonging to the mod. */
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, HellasGardens.MOD_ID);
     private static final List<RegistryObject<? extends Block>> CUTOUT_BLOCKS = new ArrayList<>();
 
@@ -121,6 +129,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHARONS_REED = registerReed("charons_reed");
     public static final RegistryObject<Block> ASHMELON_MELON = registerMelon("ashmelon");
 
+    /**
+     * Registers a named crop together with its seed/produce items and records
+     * the block for cutout rendering.
+     */
     private static RegistryObject<Block> registerCrop(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_crop", () -> new HellasCropBlock(ModItems.seedSupplier(name)));
         ModItems.registerCropItems(name, block);
@@ -128,6 +140,9 @@ public class ModBlocks {
         return block;
     }
 
+    /**
+     * Registers a named berry bush, hooking it up with its produce items.
+     */
     private static RegistryObject<Block> registerBush(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_bush", () -> new HellasBushBlock(ModItems.produceSupplier(name)));
         ModItems.registerPlantItems(name, block, false);
@@ -135,6 +150,10 @@ public class ModBlocks {
         return block;
     }
 
+    /**
+     * Registers a smaller herb plant that behaves similarly to sweet berry
+     * bushes but without attached produce items.
+     */
     private static RegistryObject<Block> registerHerb(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_bush", HellasHerbBlock::new);
         ModItems.registerPlantItems(name, block, false);
@@ -142,6 +161,7 @@ public class ModBlocks {
         return block;
     }
 
+    /** Registers a decorative flower and its block item. */
     private static RegistryObject<Block> registerFlower(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_flower", HellasFlowerBlock::new);
         ModItems.registerPlantItems(name, block, false);
@@ -149,10 +169,15 @@ public class ModBlocks {
         return block;
     }
 
+    /** Convenience overload when the sapling references existing registry objects. */
     private static RegistryObject<Block> registerSapling(String name, RegistryObject<Block> log, RegistryObject<Block> leaves) {
         return registerSapling(name, () -> log.get().defaultBlockState(), () -> leaves.get().defaultBlockState());
     }
 
+    /**
+     * Registers a sapling that, when grown, hands tree generation parameters to
+     * {@link com.xsasakihaise.hellasgardens.world.HellasTree}.
+     */
     private static RegistryObject<Block> registerSapling(String name, Supplier<BlockState> logState, Supplier<BlockState> leavesState) {
         RegistryObject<Block> block = BLOCKS.register(name + "_sapling", () -> new HellasSaplingBlock(logState, leavesState));
         ModItems.registerPlantItems(name, block, false);
@@ -188,6 +213,7 @@ public class ModBlocks {
         return block;
     }
 
+    /** Registers a vine-style climbing plant. */
     private static RegistryObject<Block> registerVine(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_vine", HellasVineBlock::new);
         ModItems.registerPlantItems(name, block, false);
@@ -195,6 +221,7 @@ public class ModBlocks {
         return block;
     }
 
+    /** Registers reed-like growth that extends upward when bonemealed. */
     private static RegistryObject<Block> registerReed(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_reeds", HellasReedBlock::new);
         ModItems.registerPlantItems(name, block, false);
@@ -202,12 +229,17 @@ public class ModBlocks {
         return block;
     }
 
+    /** Registers melon-like fruit blocks with matching block items. */
     private static RegistryObject<Block> registerMelon(String name) {
         RegistryObject<Block> block = BLOCKS.register(name + "_melon", HellasMelonBlock::new);
         ModItems.registerPlantItems(name, block, false);
         return block;
     }
 
+    /**
+     * Returns an immutable view used on the client to configure render layers
+     * for transparent foliage.
+     */
     public static List<RegistryObject<? extends Block>> getCutoutBlocks() {
         return Collections.unmodifiableList(CUTOUT_BLOCKS);
     }

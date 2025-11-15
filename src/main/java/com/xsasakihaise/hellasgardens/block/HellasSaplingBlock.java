@@ -8,6 +8,10 @@ import net.minecraft.block.BlockState;
 
 import java.util.function.Supplier;
 
+/**
+ * Sapling that spawns a {@link com.xsasakihaise.hellasgardens.world.HellasTree}
+ * using supplied log/leaf states when fully grown.
+ */
 public class HellasSaplingBlock extends SaplingBlock {
     public HellasSaplingBlock(Supplier<BlockState> logState, Supplier<BlockState> leavesState) {
         super(new HellasTree(logState, leavesState), Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));
